@@ -1,0 +1,3068 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Swift Rectangular Snail</title>
+    <meta property="og:title" content="Swift Rectangular Snail" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header class="navbar8-container">
+          <header data-thq="thq-navbar" class="navbar8-navbar-interactive">
+            <a href="#home" class="navbar8-link">
+              <img alt="logo" src="public/h-1500h.png" class="navbar8-image1" />
+            </a>
+            <div data-thq="thq-navbar-nav" class="navbar8-desktop-menu">
+              <nav class="navbar8-links">
+                <a
+                  href="#Services"
+                  class="navbar8-link3 thq-link thq-body-small"
+                >
+                  <span>Services</span>
+                </a>
+                <a href="#hiring" class="navbar8-link4 thq-link thq-body-small">
+                  <span>Carrer</span>
+                </a>
+                <a href="#team" class="navbar8-link2 thq-link thq-body-small">
+                  <span>About</span>
+                </a>
+              </nav>
+              <a
+                href="#contact us"
+                class="navbar8-button button thq-button-outline"
+              >
+                <span id="" class="navbar8-text thq-body-small">
+                  Contact Us
+                </span>
+              </a>
+            </div>
+            <div data-thq="thq-burger-menu" class="navbar8-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="navbar8-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="navbar8-mobile-menu">
+              <div class="navbar8-nav">
+                <div class="navbar8-top">
+                  <img
+                    alt="logo"
+                    src="public/h-1500h.png"
+                    class="navbar8-logo"
+                  />
+                  <div data-thq="thq-close-menu" class="navbar8-close-menu">
+                    <svg viewBox="0 0 1024 1024" class="navbar8-icon02">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="navbar8-links1">
+                  <span class="thq-link thq-body-small">
+                    <span>About</span>
+                  </span>
+                  <span class="thq-link thq-body-small">
+                    <span>Services</span>
+                  </span>
+                  <span class="thq-link thq-body-small">
+                    <span>Carrer</span>
+                  </span>
+                </nav>
+                <div class="navbar8-buttons">
+                  <button class="navbar8-action1 thq-button-filled">
+                    <span>Main Action</span>
+                  </button>
+                  <button class="thq-button-outline">
+                    <span>Contact us</span>
+                  </button>
+                </div>
+              </div>
+              <div class="navbar8-icon-group">
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="thq-icon-x-small"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="thq-icon-x-small"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="thq-icon-small"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </header>
+        <div class="banner1-container thq-section-padding">
+          <div class="banner1-max-width thq-section-max-width">
+            <div class="banner1-container1">
+              <h2 class="banner1-title thq-heading-2">
+                <span>Welcome to HAG Tech</span>
+              </h2>
+              <h3 class="banner1-text thq-heading-3">
+                <span>Your go-to partner for robust software solutions</span>
+              </h3>
+            </div>
+            <a href="#Services" class="banner1-link thq-button-filled">
+              <span>Explore Our Services</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero17-header78">
+          <div class="hero17-column thq-section-max-width thq-section-padding">
+            <div class="hero17-content">
+              <h1 id="home" class="hero17-text thq-heading-1">
+                <span>HAG Tech</span>
+              </h1>
+              <p class="hero17-text1 thq-body-large">
+                <span>
+                  Creating robust software solutions involves designing,
+                  developing, and maintaining software that is reliable,
+                  efficient, and scalable
+                </span>
+              </p>
+            </div>
+            <div class="hero17-actions">
+              <button class="thq-button-filled hero17-button">
+                <a href="#Services" class="hero17-text2 thq-body-small">
+                  <span>Our Services</span>
+                </a>
+              </button>
+              <button class="hero17-button1 thq-button-outline">
+                <a href="#contact us" id="" class="hero17-text3 thq-body-small">
+                  <span>Contact Us</span>
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="hero17-content1">
+            <div
+              class="hero17-row-container thq-mask-image-horizontal thq-animated-group-container-horizontal"
+            >
+              <div class="thq-animated-group-horizontal">
+                <img
+                  alt="Hero Image"
+                  src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                  class="hero17-placeholder-image thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1552083974-186346191183?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image01 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1574169208507-84376144848b?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGFic3RyYWN0fGVufDB8fHx8MTcxMDg3MDkzMHww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image02 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDV8fGFic3RyYWN0fGVufDB8fHx8MTcxMDg3MDkzMHww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image03 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1604076913837-52ab5629fba9?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDh8fGFic3RyYWN0fGVufDB8fHx8MTcxMDg3MDkzMHww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image04 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1534312527009-56c7016453e6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIxfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image05 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1561212044-bac5ef688a07?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIyfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image06 thq-img-scale thq-img-ratio-1-1"
+                />
+              </div>
+              <div class="thq-animated-group-horizontal">
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEwfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image07 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1552083974-186346191183?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image08 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1574169208507-84376144848b?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGFic3RyYWN0fGVufDB8fHx8MTcxMDg3MDkzMHww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image09 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDV8fGFic3RyYWN0fGVufDB8fHx8MTcxMDg3MDkzMHww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image10 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1604076913837-52ab5629fba9?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDh8fGFic3RyYWN0fGVufDB8fHx8MTcxMDg3MDkzMHww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image11 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1534312527009-56c7016453e6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIxfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image12 thq-img-scale thq-img-ratio-1-1"
+                />
+              </div>
+            </div>
+            <div
+              class="hero17-row-container1 thq-mask-image-horizontal thq-animated-group-container-horizontal"
+            >
+              <div class="thq-animated-group-horizontal-reverse">
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1561212044-bac5ef688a07?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIyfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image13 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEwfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image14 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1506259091721-347e791bab0f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDExfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image15 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDI0fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image16 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1524169358666-79f22534bc6e?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDI3fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image17 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1568214379698-8aeb8c6c6ac8?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEyfHxncmFmaWN8ZW58MHx8fHwxNzE1Nzk0OTk5fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image18 thq-img-scale thq-img-ratio-1-1"
+                />
+              </div>
+              <div class="thq-animated-group-horizontal-reverse">
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1561212044-bac5ef688a07?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIyfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image19 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEwfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image20 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1506259091721-347e791bab0f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDExfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image21 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDI0fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image22 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1524169358666-79f22534bc6e?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDI3fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image23 thq-img-scale thq-img-ratio-1-1"
+                />
+                <img
+                  alt="Hero Image"
+                  src="https://images.unsplash.com/photo-1568214379698-8aeb8c6c6ac8?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEyfHxncmFmaWN8ZW58MHx8fHwxNzE1Nzk0OTk5fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  class="hero17-placeholder-image24 thq-img-scale thq-img-ratio-1-1"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="hero17-container1">
+              <style>
+                @keyframes scroll-x {
+                  from {
+                    transform: translateX(0);
+                  }
+                  to {
+                    transform: translateX(calc(-100% - 16px));
+                  }
+                }
+
+                @keyframes scroll-y {
+                  from {
+                    transform: translateY(0);
+                  }
+                  to {
+                    transform: translateY(calc(-100% - 16px));
+                  }
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div class="features231-layout349 thq-section-padding">
+          <div class="features231-max-width thq-section-max-width">
+            <div class="features231-container">
+              <h2 class="thq-heading-2"><span>Our Features</span></h2>
+              <span class="features231-text01 thq-body-small">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                </span>
+              </span>
+            </div>
+            <div class="thq-grid-3">
+              <div class="features231-container2 thq-card">
+                <img
+                  alt="Custom Solutions Image"
+                  src="https://images.unsplash.com/photo-1543936126-5dfdbd4285f6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTA0M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features231-image thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Custom Solutions</span></h2>
+                <span class="features231-text03 thq-body-small">
+                  <span>
+                    Tailored software solutions to meet your specific business
+                    needs.
+                  </span>
+                </span>
+              </div>
+              <div class="features231-container3 thq-card">
+                <img
+                  alt="Scalability Image"
+                  src="https://images.unsplash.com/photo-1523289217630-0dd16184af8e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTAzOXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features231-image1 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Scalability</span></h2>
+                <span class="features231-text05 thq-body-small">
+                  <span>
+                    Our software grows with your business, ensuring scalability
+                    and performance.
+                  </span>
+                </span>
+              </div>
+              <div class="features231-container4 thq-card">
+                <img
+                  alt="Security Image"
+                  src="https://images.unsplash.com/photo-1531913223931-b0d3198229ee?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTA0Nnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features231-image2 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Security</span></h2>
+                <span class="features231-text07 thq-body-small">
+                  <span>
+                    Robust security measures to protect your data and ensure
+                    compliance.
+                  </span>
+                </span>
+              </div>
+              <div class="features231-container5 thq-card">
+                <img
+                  alt="User-Friendly Interface Image"
+                  src="https://images.unsplash.com/photo-1587200292891-9b3a506060f6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTAzOXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1400"
+                  class="features231-image3 thq-img-round"
+                />
+                <h2 class="thq-heading-2">
+                  <span>User-Friendly Interface</span>
+                </h2>
+                <span class="features231-text09 thq-body-small">
+                  <span>
+                    Intuitive interfaces designed for seamless user experience.
+                  </span>
+                </span>
+              </div>
+              <div class="features231-container6 thq-card">
+                <img
+                  alt="24/7 Support Image"
+                  src="https://images.unsplash.com/photo-1581092456744-82cdd366cd15?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTA0M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features231-image4 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>24/7 Support</span></h2>
+                <span class="features231-text11 thq-body-small">
+                  <span>
+                    Dedicated support team available round the clock to assist
+                    you.
+                  </span>
+                </span>
+              </div>
+              <div class="features231-container7 thq-card">
+                <img
+                  alt="Integration Image"
+                  src="https://images.unsplash.com/photo-1522125670776-3c7abb882bc2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTA0NHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features231-image5 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Integration</span></h2>
+                <span class="features231-text13 thq-body-small">
+                  <span>
+                    Seamless integration with existing systems for enhanced
+                    efficiency.
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="thq-section-padding">
+          <div class="testimonial17-max-width thq-section-max-width">
+            <div class="testimonial17-container">
+              <h2 class="thq-heading-2"><span>Testimonials</span></h2>
+              <span class="testimonial17-text01 thq-body-small">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                </span>
+              </span>
+            </div>
+            <div class="thq-grid-2">
+              <div class="thq-animated-card-bg-2">
+                <div class="thq-animated-card-bg-1">
+                  <div data-animated="true" class="thq-card testimonial17-card">
+                    <div class="testimonial17-container02">
+                      <img
+                        alt="image"
+                        src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGF2YXRhcnxlbnwwfHx8fDE3MTYzODM1NTJ8MA&amp;ixlib=rb-4.0.3&amp;w=200"
+                        class="testimonial17-image"
+                      />
+                      <div class="testimonial17-container03">
+                        <strong class="thq-body-large">
+                          <span>Dr. Sabhya Sachi Gupta</span>
+                        </strong>
+                        <span class="thq-body-small">
+                          <span>Chairman, City Hospital</span>
+                        </span>
+                      </div>
+                    </div>
+                    <span class="testimonial17-text04 thq-body-small">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum
+                        nulla.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="thq-animated-card-bg-2">
+                <div class="thq-animated-card-bg-1">
+                  <div
+                    data-animated="true"
+                    class="thq-card testimonial17-card1"
+                  >
+                    <div class="testimonial17-container04">
+                      <img
+                        alt="image"
+                        src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1fHxhdmF0YXJ8ZW58MHx8fHwxNzE2MzgzNTUyfDA&amp;ixlib=rb-4.0.3&amp;w=200"
+                        class="testimonial17-image1"
+                      />
+                      <div class="testimonial17-container05">
+                        <strong class="thq-body-large">
+                          <span>Chandra</span>
+                        </strong>
+                        <span class="thq-body-small"><span>Livvreb</span></span>
+                      </div>
+                    </div>
+                    <span class="testimonial17-text07 thq-body-small">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum
+                        nulla.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="thq-animated-card-bg-2">
+                <div class="thq-animated-card-bg-1">
+                  <div
+                    data-animated="true"
+                    class="thq-card testimonial17-card2"
+                  >
+                    <div class="testimonial17-container06">
+                      <img
+                        alt="image"
+                        src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEyfHxhdmF0YXJ8ZW58MHx8fHwxNzE2MzgzNTUyfDA&amp;ixlib=rb-4.0.3&amp;w=200"
+                        class="testimonial17-image2"
+                      />
+                      <div class="testimonial17-container07">
+                        <strong class="thq-body-large">
+                          <span>Author Name</span>
+                        </strong>
+                        <span class="thq-body-small">
+                          <span>Position, Company name</span>
+                        </span>
+                      </div>
+                    </div>
+                    <span class="testimonial17-text10 thq-body-small">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum
+                        nulla.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="thq-animated-card-bg-2">
+                <div class="thq-animated-card-bg-1">
+                  <div
+                    data-animated="true"
+                    class="thq-card testimonial17-card3"
+                  >
+                    <div class="testimonial17-container08">
+                      <img
+                        alt="image"
+                        src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDMxfHxhdmF0YXJ8ZW58MHx8fHwxNzE2MzgzNTY2fDA&amp;ixlib=rb-4.0.3&amp;w=200"
+                        class="testimonial17-image3"
+                      />
+                      <div class="testimonial17-container09">
+                        <strong class="thq-body-large">
+                          <span>Author Name</span>
+                        </strong>
+                        <span class="thq-body-small">
+                          <span>Position, Company name</span>
+                        </span>
+                      </div>
+                    </div>
+                    <span class="testimonial17-text13 thq-body-small">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum
+                        nulla.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Services" class="features23-layout349 thq-section-padding">
+          <div class="features23-max-width thq-section-max-width">
+            <div class="features23-container">
+              <h2 class="thq-heading-2"><span>Services We Offer</span></h2>
+            </div>
+            <div class="thq-grid-3">
+              <div class="features23-container2 thq-card">
+                <img
+                  alt="image"
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&amp;force_format=original"
+                  class="features23-image thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>iOS Development</span></h2>
+              </div>
+              <div class="features23-container3 thq-card">
+                <img
+                  alt="image"
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&amp;force_format=original"
+                  class="features23-image1 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Mac Development</span></h2>
+              </div>
+              <div class="features23-container4 thq-card">
+                <img
+                  alt="image"
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&amp;force_format=original"
+                  class="features23-image2 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Machine learning</span></h2>
+              </div>
+              <div class="features23-container5 thq-card">
+                <img
+                  alt="image"
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&amp;force_format=original"
+                  class="features23-image3 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Data Science</span></h2>
+              </div>
+              <div class="features23-container6 thq-card">
+                <img
+                  alt="image"
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&amp;force_format=original"
+                  class="features23-image4 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>iPadOS Development</span></h2>
+              </div>
+              <div class="features23-container7 thq-card">
+                <img
+                  alt="iOS Development"
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&amp;force_format=original"
+                  class="features23-image5 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>IT consulting</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="thq-section-padding">
+          <div id="team" class="team10-max-width thq-section-max-width">
+            <div class="team10-section-title">
+              <span class="thq-body-small team10-text">
+                <span>Join our team and make a difference in your career!</span>
+              </span>
+              <div class="team10-content">
+                <h2 class="thq-heading-2"><span>Meet our team</span></h2>
+              </div>
+            </div>
+            <div
+              data-thq="slider"
+              data-loop="true"
+              data-autoplay="true"
+              data-navigation="true"
+              data-pagination="true"
+              class="team10-slider swiper"
+            >
+              <div data-thq="slider-wrapper" class="swiper-wrapper">
+                <div
+                  data-thq="slider-slide"
+                  class="team10-slider-slide swiper-slide"
+                >
+                  <div class="team10-card">
+                    <img
+                      alt="Member Alt"
+                      src="public/98f8e26b-df7e-4160-8f0f-d21957c44c36_1_201_a-1400w.jpeg"
+                      class="team10-placeholder-image thq-img-ratio-1-1"
+                    />
+                    <div class="team10-content01">
+                      <div class="team10-title">
+                        <span class="team10-text02 thq-body-small">
+                          <span>Harsh Goutam</span>
+                        </span>
+                        <span class="team10-text03 thq-body-small">
+                          <span>Founder | CEO</span>
+                        </span>
+                      </div>
+                      <span class="team10-text04 thq-body-small">
+                        <span>
+                          The company starts with people and we have figured
+                          that long time ago. We’ve grown HAG Tech into a
+                          successful company with personal approach, to both
+                          clients and employees.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team10-social-icons">
+                      <a
+                        href="https://www.linkedin.com/in/harsh-goutam-39997521a"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="team10-link"
+                      >
+                        <svg
+                          viewBox="0 0 877.7142857142857 1024"
+                          class="team10-icon thq-icon-small"
+                        >
+                          <path
+                            d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                          ></path>
+                        </svg>
+                      </a>
+                      <a
+                        href="https://x.com/HarshGout"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="team10-link1"
+                      >
+                        <svg
+                          viewBox="0 0 950.8571428571428 1024"
+                          class="team10-icon02 thq-icon-small"
+                        >
+                          <path
+                            d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-thq="slider-slide"
+                  class="team10-slider-slide1 swiper-slide"
+                >
+                  <div class="team10-card1">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team10-placeholder-image1 thq-img-ratio-1-1"
+                    />
+                    <div class="team10-content02">
+                      <div class="team10-title1">
+                        <span class="team10-text05 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team10-text06 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team10-text07 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team10-social-icons1">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="team10-card2">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDV8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team10-placeholder-image2 thq-img-ratio-1-1"
+                    />
+                    <div class="team10-content03">
+                      <div class="team10-title2">
+                        <span class="team10-text08 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team10-text09 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team10-text10 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team10-social-icons2">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-thq="slider-slide"
+                  class="team10-slider-slide2 swiper-slide"
+                >
+                  <div class="team10-card3">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team10-placeholder-image3 thq-img-ratio-1-1"
+                    />
+                    <div class="team10-content04">
+                      <div class="team10-title3">
+                        <span class="team10-text11 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team10-text12 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team10-text13 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team10-social-icons3">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="team10-card4">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE2fHx1c2VyfGVufDB8fHx8MTcxMDk0MjYxMnww&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team10-placeholder-image4 thq-img-ratio-1-1"
+                    />
+                    <div class="team10-content05">
+                      <div class="team10-title4">
+                        <span class="team10-text14 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team10-text15 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team10-text16 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team10-social-icons4">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-thq="slider-pagination"
+                class="team10-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+              >
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                ></div>
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="team10-slider-pagination-bullet1 swiper-pagination-bullet"
+                ></div>
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="team10-slider-pagination-bullet2 swiper-pagination-bullet"
+                ></div>
+              </div>
+              <div
+                data-thq="slider-button-prev"
+                class="swiper-button-prev"
+              ></div>
+              <div
+                data-thq="slider-button-next"
+                class="swiper-button-next"
+              ></div>
+            </div>
+            <div
+              data-thq="slider"
+              data-navigation="true"
+              data-pagination="true"
+              class="team10-slider1 swiper"
+            >
+              <div data-thq="slider-wrapper" class="swiper-wrapper">
+                <div
+                  data-thq="slider-slide"
+                  class="team10-slider-slide3 swiper-slide"
+                >
+                  <div class="team10-card5">
+                    <img
+                      alt="Member Alt"
+                      src="public/98f8e26b-df7e-4160-8f0f-d21957c44c36_1_201_a-1400w.jpeg"
+                      class="team10-placeholder-image5 thq-img-ratio-1-1"
+                    />
+                    <div class="team10-content06">
+                      <div class="team10-title5">
+                        <span class="team10-text17 thq-body-small">
+                          <span>Harsh Goutam</span>
+                        </span>
+                        <span class="team10-text18 thq-body-small">
+                          <span>Founder | CEO</span>
+                        </span>
+                      </div>
+                      <span class="team10-text19 thq-body-small">
+                        <span>
+                          The company starts with people and we have figured
+                          that long time ago. We’ve grown HAG Tech into a
+                          successful company with personal approach, to both
+                          clients and employees.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team10-social-icons5">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div data-thq="slider-slide" class="team10-slider-slide4">
+                  <div class="team10-card6">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="thq-img-ratio-1-1 team10-placeholder-image6"
+                    />
+                    <div class="team10-content07">
+                      <div class="team10-title6">
+                        <span class="team10-text20 thq-body-small">
+                          <span>Full name</span>
+                          <span>Harsh Goutam</span>
+                        </span>
+                        <span class="team10-text22 thq-body-small">
+                          <span>Job title</span>
+                          <span>Founder | CEO</span>
+                        </span>
+                      </div>
+                      <span class="team10-text24 thq-body-small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                      </span>
+                    </div>
+                    <div class="team10-social-icons6">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-thq="slider-pagination"
+                class="team10-slider-pagination1 swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+              >
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                ></div>
+              </div>
+              <div
+                data-thq="slider-button-prev"
+                class="swiper-button-prev"
+              ></div>
+              <div
+                data-thq="slider-button-next"
+                class="swiper-button-next"
+              ></div>
+            </div>
+            <div class="team10-content08">
+              <div class="team10-content09">
+                <h2 id="hiring" class="team10-text25 thq-heading-2">
+                  <span>We’re hiring!</span>
+                </h2>
+                <span class="thq-body-small team10-text26">
+                  <span>
+                    The company starts with people and we have figured that long
+                    time ago. We’ve grown HAG Tech into a successful company
+                    with personal approach, to both clients and employees.
+                  </span>
+                </span>
+              </div>
+              <button class="team10-button thq-button-filled">
+                <span class="thq-body-small"><span>Open positions</span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="home-faq7 thq-section-padding">
+          <div class="home-max-width thq-section-max-width">
+            <div class="thq-flex-column">
+              <h2 class="thq-heading-2">FAQs</h2>
+            </div>
+            <div class="thq-flex-column home-list">
+              <div class="home-list-item1">
+                <p class="home-faq1-question thq-body-large">
+                  What services does HAG Tech offer?
+                </p>
+                <span class="thq-body-small">
+                  HAG Tech offers a range of services including software
+                  development, web development, mobile app development, and IT
+                  consulting.
+                </span>
+              </div>
+              <div class="home-list-item2">
+                <p class="home-faq2-question thq-body-large">
+                  How can I apply for a job at HAG Tech?
+                </p>
+                <span class="thq-body-small">
+                  To apply for a job at HAG Tech, please visit our Careers page
+                  and submit your application through the online form.
+                </span>
+              </div>
+              <div class="home-list-item3">
+                <p class="home-faq3-question thq-body-large">
+                  Who are the team members at HAG Tech?
+                </p>
+                <span class="thq-body-small">
+                  Our team members at HAG Tech are highly skilled professionals
+                  with expertise in various technologies and domains.
+                </span>
+              </div>
+              <div class="home-list-item4">
+                <p class="home-faq4-question thq-body-large">
+                  What makes HAG Tech's software solutions robust?
+                </p>
+                <span class="thq-body-small">
+                  HAG Tech's software solutions are robust due to our focus on
+                  quality assurance, continuous testing, and adherence to best
+                  practices in software development.
+                </span>
+              </div>
+              <div class="home-list-item5">
+                <p class="home-faq5-question thq-body-large">
+                  How can I contact HAG Tech for inquiries?
+                </p>
+                <span class="thq-body-small">
+                  For inquiries, you can contact us through the Contact Us page
+                  on our website or reach out to us via email or phone.
+                </span>
+              </div>
+            </div>
+            <div class="thq-flex-column">
+              <div class="home-content1"></div>
+              <div class="home-container1"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="contact us"
+          class="contact-form72-contact1 thq-section-padding"
+        >
+          <div
+            class="contact-form72-max-width thq-section-max-width thq-flex-row"
+          >
+            <div class="contact-form72-section-title thq-flex-column">
+              <span class="thq-body-small">
+                <span>Get in touch with us today!</span>
+              </span>
+              <div class="contact-form72-content">
+                <h2 class="thq-heading-2"><span>Contact us</span></h2>
+                <span class="thq-body-small contact-form72-text02">
+                  <span>
+                    Tell us about you and your project. Usually we get back in
+                    one business day.
+                  </span>
+                </span>
+              </div>
+              <div class="contact-form72-content1">
+                <div class="contact-form72-row">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                    <path
+                      d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                    ></path>
+                  </svg>
+                  <span class="thq-body-small">
+                    <span>hagtechsol@gmail.com</span>
+                  </span>
+                </div>
+                <div class="contact-form72-row1">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                    <path
+                      d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                    ></path>
+                  </svg>
+                  <span class="thq-body-small">
+                    <span>+91 7470450810</span>
+                  </span>
+                </div>
+                <div class="contact-form72-row2">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                    <path
+                      d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
+                    ></path>
+                  </svg>
+                  <span class="thq-body-small">
+                    <span>Bhopal, Madhya Pradesh, India</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form72-form thq-flex-column">
+              <div class="contact-form72-container">
+                <div class="contact-form72-input">
+                  <label for="contact-form-7-first-name" class="thq-body-small">
+                    First name
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-form-7-first-name"
+                    placeholder="First Name"
+                    class="thq-input"
+                  />
+                </div>
+                <div class="contact-form72-input1">
+                  <label for="contact-form-7-last-name" class="thq-body-small">
+                    Last name
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-form-7-last-name"
+                    placeholder="Last Name"
+                    class="thq-input"
+                  />
+                </div>
+              </div>
+              <div class="contact-form72-container1">
+                <div class="contact-form72-input2">
+                  <label for="contact-form-7-email" class="thq-body-small">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="contact-form-7-email"
+                    required="true"
+                    placeholder="Email"
+                    class="thq-input"
+                  />
+                </div>
+                <div class="contact-form72-input3">
+                  <label for="contact-form-7-phone" class="thq-body-small">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="contact-form-7-phone"
+                    placeholder="Phone Number"
+                    class="thq-input"
+                  />
+                </div>
+              </div>
+              <div class="contact-form72-container2">
+                <div class="contact-form72-input4">
+                  <label for="contact-form-7-options" class="thq-body-small">
+                    Choose one topic
+                  </label>
+                  <select
+                    id="contact-form-7-options"
+                    placeholder="Select one"
+                    class="thq-select"
+                  >
+                    <option value="Option 1">Price Quotation</option>
+                    <option value="Option 1">Customer Support</option>
+                    <option value="Option 2">Finance</option>
+                    <option value="Option 3">Feature request</option>
+                    <option value="Option 1">
+                      Looking for Career Opportunities
+                    </option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="contact-form72-container3">
+                <div class="contact-form72-input5">
+                  <label for="contact-form-7-message" class="thq-body-small">
+                    Message
+                  </label>
+                  <textarea
+                    id="contact-form-7-message"
+                    rows="3"
+                    placeholder="Enter your message"
+                    class="thq-input"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="contact-form72-checkbox">
+                <input
+                  type="checkbox"
+                  id="contact-form-7-check"
+                  checked="true"
+                  required="true"
+                  class="thq-checkbox"
+                />
+                <label for="contact-form-7-check" class="thq-body-small">
+                  I accept the Terms
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="contact-form72-button thq-button-filled"
+              >
+                <span class="thq-body-small"><span>Submit</span></span>
+              </button>
+            </form>
+          </div>
+          <div class="contact-form72-row3">
+            <div class="contact-form72-container4">
+              <span class="thq-body-small"><span>© 2024 HAG Tech</span></span>
+            </div>
+            <div class="contact-form72-footer-links">
+              <span class="contact-form72-text11 thq-body-small">
+                <span>Privacy Policy</span>
+              </span>
+              <span class="thq-body-small"><span>Terms of Service</span></span>
+              <span class="thq-body-small"><span>Cookies Settings</span></span>
+            </div>
+          </div>
+        </div>
+        <footer
+          class="footer4-footer7 thq-section-padding footer4-root-class-name"
+        >
+          <div class="contact4-contact20 thq-section-padding">
+            <div class="contact4-max-width thq-section-max-width">
+              <div class="contact4-section-title">
+                <span class="thq-body-small">
+                  <span>
+                    Our team is here to assist you with any inquiries.
+                  </span>
+                </span>
+                <div class="contact4-content">
+                  <h2 class="thq-heading-2"><span>Contact Us</span></h2>
+                  <p class="thq-body-large">
+                    <span>
+                      Have questions or need support? Reach out to us!
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="contact4-row">
+                <div class="contact4-content1">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                    <path
+                      d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                    ></path>
+                  </svg>
+                  <div class="contact4-contact-info">
+                    <div class="contact4-content2">
+                      <h3 class="contact4-text3 thq-heading-3">Email</h3>
+                      <p class="contact4-text4 thq-body-large">
+                        <span>harshgoutam178@gmail.com</span>
+                      </p>
+                    </div>
+                    <span class="contact4-email thq-body-small">
+                      <span>support@example.com</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="contact4-content3">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="contact4-icon2 thq-icon-medium"
+                  >
+                    <path
+                      d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                    ></path>
+                  </svg>
+                  <div class="contact4-contact-info1">
+                    <div class="contact4-content4">
+                      <h3 class="contact4-text5 thq-heading-3">Phone</h3>
+                      <p class="contact4-text6 thq-body-large">
+                        <span>Contact us at +1234567890 for help.</span>
+                      </p>
+                    </div>
+                    <span class="contact4-phone thq-body-small">
+                      <span>7470450810</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="contact4-content5">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="contact4-icon4 thq-icon-medium"
+                  >
+                    <path
+                      d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
+                    ></path>
+                  </svg>
+                  <div class="contact4-contact-info2">
+                    <div class="contact4-content6">
+                      <h3 class="contact4-text7 thq-heading-3">Office</h3>
+                      <p class="contact4-text8 thq-body-large">
+                        <span>Bhopal, Madhya Pradesh , India</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer4-max-width thq-section-max-width">
+            <div class="footer4-content"><div class="footer4-logo"></div></div>
+            <div class="footer4-credits">
+              <div class="thq-divider-horizontal"></div>
+              <div class="footer4-row">
+                <div class="footer4-container">
+                  <span class="thq-body-small">
+                    <span>© 2024 HAG Tech</span>
+                  </span>
+                </div>
+                <div class="footer4-footer-links">
+                  <span class="footer4-text1 thq-body-small">
+                    <span>Privacy Policy</span>
+                  </span>
+                  <span class="thq-body-small">
+                    <span>Terms of Service</span>
+                  </span>
+                  <span class="thq-body-small">
+                    <span>Cookies Settings</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div
+          id="feature"
+          class="thq-section-padding features24-root-class-name"
+        >
+          <div class="features24-container1 thq-section-max-width">
+            <div class="features24-image-container">
+              <img
+                alt="feature 1"
+                src="https://images.unsplash.com/photo-1552250575-e508473b090f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1Mnx8YWJzdHJhY3R8ZW58MHx8fHwxNzE2MjAxNjAyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                class="features24-image thq-img-ratio-16-9"
+              />
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1505356822725-08ad25f3ffe4?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDQ3fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTYyMDEzMDd8MA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                class="features24-image1 thq-img-ratio-16-9"
+              />
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDg0fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTYyMDE1NTZ8MA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                class="features24-image2 thq-img-ratio-16-9"
+              />
+            </div>
+            <div class="features24-tabs-menu">
+              <div class="features24-tab-horizontal">
+                <div class="features24-divider-container">
+                  <div class="features24-container2"></div>
+                </div>
+                <div class="features24-content">
+                  <h2 class="thq-heading-2"><span>Feature #1</span></h2>
+                  <span class="thq-body-small">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat.
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="features24-tab-horizontal1">
+                <div class="features24-divider-container1">
+                  <div class="features24-container3"></div>
+                </div>
+                <div class="features24-content1">
+                  <h2 class="thq-heading-2"><span>Feature #2</span></h2>
+                  <span class="thq-body-small">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat.
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="features24-tab-horizontal2">
+                <div class="features24-divider-container2">
+                  <div class="features24-container4"></div>
+                </div>
+                <div class="features24-content2">
+                  <h2 class="thq-heading-2"><span>Feature #3</span></h2>
+                  <span class="thq-body-small">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat.
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="thq-section-padding cta26-root-class-name">
+          <div class="thq-section-max-width">
+            <div class="cta26-accent2-bg">
+              <div class="cta26-accent1-bg">
+                <div class="cta26-container1">
+                  <div class="cta26-content">
+                    <span class="thq-heading-2">
+                      <span>Medium length heading goes here</span>
+                    </span>
+                    <p class="thq-body-large">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                      </span>
+                    </p>
+                  </div>
+                  <div class="cta26-actions">
+                    <button
+                      type="button"
+                      class="thq-button-filled cta26-button"
+                    >
+                      <span>Main Action</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="thq-section-padding features25-root-class-name">
+          <div class="features25-container1 thq-section-max-width">
+            <div class="features25-tabs-menu">
+              <div class="features25-tab-horizontal">
+                <div class="features25-divider-container">
+                  <div class="features25-container2"></div>
+                </div>
+                <div class="features25-content">
+                  <h2 class="thq-heading-2"><span>Feature #1</span></h2>
+                  <span class="thq-body-small">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat.
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="features25-tab-horizontal1">
+                <div class="features25-divider-container1">
+                  <div class="features25-container3"></div>
+                </div>
+                <div class="features25-content1">
+                  <h2 class="thq-heading-2"><span>Feature #2</span></h2>
+                  <span class="thq-body-small">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat.
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="features25-tab-horizontal2">
+                <div class="features25-divider-container2">
+                  <div class="features25-container4"></div>
+                </div>
+                <div class="features25-content2">
+                  <h2 class="thq-heading-2"><span>Feature #3</span></h2>
+                  <span class="thq-body-small">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat.
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="features25-image-container">
+              <img
+                alt="feature 1"
+                src="https://images.unsplash.com/photo-1626282874430-c11ae32d2898?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1NHx8YWJzdHJhY3R8ZW58MHx8fHwxNzE2MjAxNjAyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                class="features25-image thq-img-ratio-16-9"
+              />
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1505356822725-08ad25f3ffe4?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDQ3fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTYyMDEzMDd8MA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                class="features25-image1 thq-img-ratio-16-9"
+              />
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDg0fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTYyMDE1NTZ8MA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                class="features25-image2 thq-img-ratio-16-9"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="pricing14-pricing23 thq-section-padding pricing14-root-class-name"
+        >
+          <div class="pricing14-max-width thq-section-max-width">
+            <div class="pricing14-section-title">
+              <span class="pricing14-text thq-body-small">
+                <span>Choose the perfect plan for you</span>
+              </span>
+              <div class="pricing14-content">
+                <h2 class="pricing14-text01 thq-heading-2">
+                  <span>Pricing plan</span>
+                </h2>
+                <p class="pricing14-text02 thq-body-large">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="pricing14-tabs">
+              <button
+                class="pricing14-button thq-button-filled thq-button-animated"
+              >
+                <span class="thq-body-small">Monthly</span>
+              </button>
+              <button
+                class="pricing14-button01 thq-button-outline thq-button-animated"
+              >
+                <span class="thq-body-small">Monthly</span>
+              </button>
+              <button
+                class="pricing14-button02 thq-button-filled thq-button-animated"
+              >
+                <span class="thq-body-small">Yearly</span>
+              </button>
+              <button
+                class="pricing14-button03 thq-button-outline thq-button-animated"
+              >
+                <span class="thq-body-small">Yearly</span>
+              </button>
+            </div>
+            <div class="pricing14-container">
+              <div class="pricing14-column thq-card">
+                <div class="pricing14-price">
+                  <div class="pricing14-price01">
+                    <p class="pricing14-text07 thq-body-large">
+                      <span>Basic plan</span>
+                    </p>
+                    <h3 class="pricing14-text08 thq-heading-3">
+                      <span>$20/mo</span>
+                    </h3>
+                    <p class="thq-body-large"><span>or $200 yearly</span></p>
+                  </div>
+                  <div class="pricing14-list">
+                    <div class="pricing14-list-item">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item01">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item02">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="pricing14-button04 thq-button-outline thq-button-animated"
+                >
+                  <span class="thq-body-small"><span>Get started</span></span>
+                </button>
+              </div>
+              <div class="pricing14-column1 thq-card">
+                <div class="pricing14-price02">
+                  <div class="pricing14-price03">
+                    <p class="pricing14-text14 thq-body-large">
+                      <span>Business plan</span>
+                    </p>
+                    <h3 class="pricing14-text15 thq-heading-3">
+                      <span>$29/mo</span>
+                    </h3>
+                    <p class="thq-body-large"><span>or $299 yearly</span></p>
+                  </div>
+                  <div class="pricing14-list1">
+                    <div class="pricing14-list-item03">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item04">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item05">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item06">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="pricing14-button05 thq-button-filled thq-button-animated"
+                >
+                  <span class="thq-body-small"><span>Get started</span></span>
+                </button>
+              </div>
+              <div class="pricing14-column2 thq-card">
+                <div class="pricing14-price04">
+                  <div class="pricing14-price05">
+                    <p class="pricing14-text22 thq-body-large">
+                      <span>Enterprise plan</span>
+                    </p>
+                    <h3 class="pricing14-text23 thq-heading-3">
+                      <span>$49/mo</span>
+                    </h3>
+                    <p class="thq-body-large"><span>or $499 yearly</span></p>
+                  </div>
+                  <div class="pricing14-list2">
+                    <div class="pricing14-list-item07">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item08">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item09">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item10">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item11">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="pricing14-button06 thq-button-filled thq-button-animated"
+                >
+                  <span class="thq-body-small"><span>Get started</span></span>
+                </button>
+              </div>
+            </div>
+            <div class="pricing14-container1">
+              <div class="pricing14-column3 thq-card">
+                <div class="pricing14-price06">
+                  <div class="pricing14-price07">
+                    <span class="pricing14-text31 thq-body-large">
+                      <span>Basic plan</span>
+                    </span>
+                    <h3 class="pricing14-text32 thq-heading-3">
+                      <span>$200/yr</span>
+                    </h3>
+                    <span class="thq-body-large">
+                      <span>or $20 monthly</span>
+                    </span>
+                  </div>
+                  <div class="pricing14-list3">
+                    <div class="pricing14-list-item12">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item13">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item14">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="pricing14-button07 thq-button-outline thq-button-animated"
+                >
+                  <span class="thq-body-small"><span>Get started</span></span>
+                </button>
+              </div>
+              <div class="pricing14-column4 thq-card">
+                <div class="pricing14-price08">
+                  <div class="pricing14-price09">
+                    <span class="pricing14-text38 thq-body-large">
+                      <span>Business plan</span>
+                    </span>
+                    <h3 class="pricing14-text39 thq-heading-3">
+                      <span>$299/yr</span>
+                    </h3>
+                    <span class="thq-body-large">
+                      <span>or $29 monthly</span>
+                    </span>
+                  </div>
+                  <div class="pricing14-list4">
+                    <div class="pricing14-list-item15">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item16">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item17">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item18">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="pricing14-button08 thq-button-filled thq-button-animated"
+                >
+                  <span class="thq-body-small"><span>Get started</span></span>
+                </button>
+              </div>
+              <div class="pricing14-column5 thq-card">
+                <div class="pricing14-price10">
+                  <div class="pricing14-price11">
+                    <span class="pricing14-text46 thq-body-large">
+                      <span>Enterprise plan</span>
+                    </span>
+                    <h3 class="pricing14-text47 thq-heading-3">
+                      <span>$499/yr</span>
+                    </h3>
+                    <span class="thq-body-large">
+                      <span>or $49 monthly</span>
+                    </span>
+                  </div>
+                  <div class="pricing14-list5">
+                    <div class="pricing14-list-item19">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item20">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item21">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item22">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                    <div class="pricing14-list-item23">
+                      <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="thq-body-small">
+                        <span>Feature text goes here</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="pricing14-button09 thq-button-filled thq-button-animated"
+                >
+                  <span class="thq-body-small"><span>Get started</span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="steps2-container thq-section-padding steps2-root-class-name"
+        >
+          <div class="steps2-max-width thq-section-max-width">
+            <div class="steps2-container1 thq-grid-2">
+              <div class="steps2-section-header">
+                <h2 class="thq-heading-2">
+                  Discover the Power of Our Products
+                </h2>
+                <p class="thq-body-large">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                  commodo diam libero vitae erat.
+                </p>
+                <div class="steps2-actions">
+                  <button
+                    class="thq-button-filled thq-button-animated steps2-button"
+                  >
+                    <span class="thq-body-small">Main action</span>
+                  </button>
+                </div>
+              </div>
+              <div class="steps2-container2">
+                <div class="steps2-container3 thq-card">
+                  <h2 class="thq-heading-2"><span>Step 1</span></h2>
+                  <span class="steps2-text04 thq-body-small">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </span>
+                  </span>
+                  <label class="steps2-text05 thq-heading-3">01</label>
+                </div>
+                <div class="steps2-container4 thq-card">
+                  <h2 class="thq-heading-2"><span>Step 2</span></h2>
+                  <span class="steps2-text07 thq-body-small">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </span>
+                  </span>
+                  <label class="steps2-text08 thq-heading-3">02</label>
+                </div>
+                <div class="steps2-container5 thq-card">
+                  <h2 class="thq-heading-2"><span>Step 3</span></h2>
+                  <span class="steps2-text10 thq-body-small">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </span>
+                  </span>
+                  <label class="steps2-text11 thq-heading-3">03</label>
+                </div>
+                <div class="steps2-container6 thq-card">
+                  <h2 class="thq-heading-2"><span>Step 4</span></h2>
+                  <span class="steps2-text13 thq-body-small">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </span>
+                  </span>
+                  <label class="steps2-text14 thq-heading-3">04</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="contact10-container thq-section-padding contact10-root-class-name"
+        >
+          <div class="contact10-max-width thq-section-max-width">
+            <div class="contact10-content thq-flex-row">
+              <div class="contact10-content1">
+                <h2 class="thq-heading-2"><span>Locations</span></h2>
+                <p class="thq-body-large">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in ero.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="contact10-content2 thq-flex-row">
+              <div class="contact10-container1">
+                <img
+                  alt="image1Alt"
+                  src="https://images.unsplash.com/photo-1588694926280-3ae414d06ccb?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEzfHxjbHVqfGVufDB8fHx8MTcxNjI4NjI4N3ww&amp;ixlib=rb-4.0.3&amp;w=1400"
+                  class="contact10-image thq-img-ratio-16-9"
+                />
+                <h3 class="contact10-text2 thq-heading-3">
+                  <span>Bucharest</span>
+                </h3>
+                <p class="thq-body-large">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in ero.
+                  </span>
+                </p>
+                <div class="contact10-container2">
+                  <span class="thq-button-flat thq-body-small">
+                    Get directions
+                  </span>
+                </div>
+              </div>
+              <div class="contact10-container3">
+                <img
+                  alt="image2Alt"
+                  src="https://images.unsplash.com/photo-1571979195097-59d223315d89?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDMxfHxidWNoYXJlc3R8ZW58MHx8fHwxNzE2Mjg2MzE3fDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                  class="contact10-image1 thq-img-ratio-16-9"
+                />
+                <h3 class="contact10-text5 thq-heading-3">
+                  <span>Cluj - Napoca</span>
+                </h3>
+                <p class="thq-body-large">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in ero.
+                  </span>
+                </p>
+                <div class="contact10-container4">
+                  <span class="thq-button-flat thq-body-small">
+                    Get directions
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="banner1-container thq-section-padding banner1-root-class-name"
+        >
+          <div class="banner1-max-width thq-section-max-width">
+            <div class="banner1-container1">
+              <h2 class="banner1-title thq-heading-2">
+                <span>Welcome to HAG Tech</span>
+              </h2>
+              <h3 class="banner1-text thq-heading-3">
+                <span>Your go-to partner for robust software solutions</span>
+              </h3>
+            </div>
+            <a href="#Services" class="banner1-link thq-button-filled">
+              <span>Explore Our Services</span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="features231-layout349 thq-section-padding features231-root-class-name"
+        >
+          <div class="features231-max-width thq-section-max-width">
+            <div class="features231-container">
+              <h2 class="thq-heading-2"><span>Our Features</span></h2>
+              <span class="features231-text01 thq-body-small">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                </span>
+              </span>
+            </div>
+            <div class="thq-grid-3">
+              <div class="features231-container2 thq-card">
+                <img
+                  alt="Custom Solutions Image"
+                  src="https://images.unsplash.com/photo-1543936126-5dfdbd4285f6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTA0M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features231-image thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Custom Solutions</span></h2>
+                <span class="features231-text03 thq-body-small">
+                  <span>
+                    Tailored software solutions to meet your specific business
+                    needs.
+                  </span>
+                </span>
+              </div>
+              <div class="features231-container3 thq-card">
+                <img
+                  alt="Scalability Image"
+                  src="https://images.unsplash.com/photo-1523289217630-0dd16184af8e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTAzOXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features231-image1 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Scalability</span></h2>
+                <span class="features231-text05 thq-body-small">
+                  <span>
+                    Our software grows with your business, ensuring scalability
+                    and performance.
+                  </span>
+                </span>
+              </div>
+              <div class="features231-container4 thq-card">
+                <img
+                  alt="Security Image"
+                  src="https://images.unsplash.com/photo-1531913223931-b0d3198229ee?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTA0Nnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features231-image2 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Security</span></h2>
+                <span class="features231-text07 thq-body-small">
+                  <span>
+                    Robust security measures to protect your data and ensure
+                    compliance.
+                  </span>
+                </span>
+              </div>
+              <div class="features231-container5 thq-card">
+                <img
+                  alt="User-Friendly Interface Image"
+                  src="https://images.unsplash.com/photo-1587200292891-9b3a506060f6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTAzOXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1400"
+                  class="features231-image3 thq-img-round"
+                />
+                <h2 class="thq-heading-2">
+                  <span>User-Friendly Interface</span>
+                </h2>
+                <span class="features231-text09 thq-body-small">
+                  <span>
+                    Intuitive interfaces designed for seamless user experience.
+                  </span>
+                </span>
+              </div>
+              <div class="features231-container6 thq-card">
+                <img
+                  alt="24/7 Support Image"
+                  src="https://images.unsplash.com/photo-1581092456744-82cdd366cd15?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTA0M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features231-image4 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>24/7 Support</span></h2>
+                <span class="features231-text11 thq-body-small">
+                  <span>
+                    Dedicated support team available round the clock to assist
+                    you.
+                  </span>
+                </span>
+              </div>
+              <div class="features231-container7 thq-card">
+                <img
+                  alt="Integration Image"
+                  src="https://images.unsplash.com/photo-1522125670776-3c7abb882bc2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNzc5NTA0NHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                  class="features231-image5 thq-img-round"
+                />
+                <h2 class="thq-heading-2"><span>Integration</span></h2>
+                <span class="features231-text13 thq-body-small">
+                  <span>
+                    Seamless integration with existing systems for enhanced
+                    efficiency.
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="contact-form71-contact1 thq-section-padding contact-form71-root-class-name"
+        >
+          <div
+            class="contact-form71-max-width thq-section-max-width thq-flex-row"
+          >
+            <div class="contact-form71-section-title thq-flex-column">
+              <span class="thq-body-small">
+                <span>
+                  We are here to help. Reach out to us and we'll get back to you
+                  as soon as possible.
+                </span>
+              </span>
+              <div class="contact-form71-content">
+                <h2 class="thq-heading-2"><span>Contact Us</span></h2>
+                <span class="thq-body-small contact-form71-text02">
+                  <span>Have a question or need more information?</span>
+                </span>
+              </div>
+              <div class="contact-form71-content1">
+                <div class="contact-form71-row">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                    <path
+                      d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                    ></path>
+                  </svg>
+                  <span class="thq-body-small">
+                    <span>info@hagtech.com</span>
+                  </span>
+                </div>
+                <div class="contact-form71-row1">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                    <path
+                      d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                    ></path>
+                  </svg>
+                  <span class="thq-body-small">
+                    <span>+1-123-456-7890</span>
+                  </span>
+                </div>
+                <div class="contact-form71-row2">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                    <path
+                      d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
+                    ></path>
+                  </svg>
+                  <span class="thq-body-small">
+                    <span>123 Main Street, City, Country</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form71-form thq-flex-column">
+              <div class="contact-form71-container">
+                <div class="contact-form71-input">
+                  <label for="contact-form-7-first-name" class="thq-body-small">
+                    First name
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-form-7-first-name"
+                    placeholder="First Name"
+                    class="thq-input"
+                  />
+                </div>
+                <div class="contact-form71-input1">
+                  <label for="contact-form-7-last-name" class="thq-body-small">
+                    Last name
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-form-7-last-name"
+                    placeholder="Last Name"
+                    class="thq-input"
+                  />
+                </div>
+              </div>
+              <div class="contact-form71-container1">
+                <div class="contact-form71-input2">
+                  <label for="contact-form-7-email" class="thq-body-small">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="contact-form-7-email"
+                    required="true"
+                    placeholder="Email"
+                    class="thq-input"
+                  />
+                </div>
+                <div class="contact-form71-input3">
+                  <label for="contact-form-7-phone" class="thq-body-small">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="contact-form-7-phone"
+                    placeholder="Phone Number"
+                    class="thq-input"
+                  />
+                </div>
+              </div>
+              <div class="contact-form71-container2">
+                <div class="contact-form71-input4">
+                  <label for="contact-form-7-options" class="thq-body-small">
+                    Choose one topic
+                  </label>
+                  <select
+                    id="contact-form-7-options"
+                    placeholder="Select one"
+                    class="thq-select"
+                  >
+                    <option value="Option 1">Customer service</option>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 2">Finance</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 3">Feature request</option>
+                    <option value="Option 3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="contact-form71-container3">
+                <div class="contact-form71-input5">
+                  <label for="contact-form-7-message" class="thq-body-small">
+                    Message
+                  </label>
+                  <textarea
+                    id="contact-form-7-message"
+                    rows="3"
+                    placeholder="Enter your message"
+                    class="thq-input"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="contact-form71-checkbox">
+                <input
+                  type="checkbox"
+                  id="contact-form-7-check"
+                  checked="true"
+                  required="true"
+                  class="thq-checkbox"
+                />
+                <label for="contact-form-7-check" class="thq-body-small">
+                  I accept the Terms
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="contact-form71-button thq-button-filled"
+              >
+                <span class="thq-body-small"><span>Contact Us</span></span>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="thq-section-padding team11-root-class-name team11-team8">
+          <div class="team11-max-width thq-section-max-width">
+            <div class="team11-section-title">
+              <span class="thq-body-small team11-text">
+                <span>Join our team and make a difference in your career!</span>
+              </span>
+              <div class="team11-content">
+                <h2 class="thq-heading-2"><span>Meet our team</span></h2>
+                <p class="thq-body-large team11-text02">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div
+              data-thq="slider"
+              data-loop="true"
+              data-autoplay="true"
+              data-navigation="true"
+              data-pagination="true"
+              class="team11-slider swiper"
+            >
+              <div data-thq="slider-wrapper" class="swiper-wrapper">
+                <div
+                  data-thq="slider-slide"
+                  class="team11-slider-slide swiper-slide"
+                >
+                  <div class="team11-card">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content01">
+                      <div class="team11-title">
+                        <span class="team11-text03 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text04 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text05 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="team11-card01">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image01 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content02">
+                      <div class="team11-title01">
+                        <span class="team11-text06 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text07 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text08 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons01">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="team11-card02">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image02 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content03">
+                      <div class="team11-title02">
+                        <span class="team11-text09 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text10 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text11 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons02">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-thq="slider-slide"
+                  class="team11-slider-slide1 swiper-slide"
+                >
+                  <div class="team11-card03">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDV8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image03 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content04">
+                      <div class="team11-title03">
+                        <span class="team11-text12 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text13 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text14 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons03">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="team11-card04">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image04 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content05">
+                      <div class="team11-title04">
+                        <span class="team11-text15 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text16 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text17 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons04">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="team11-card05">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE2fHx1c2VyfGVufDB8fHx8MTcxMDk0MjYxMnww&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image05 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content06">
+                      <div class="team11-title05">
+                        <span class="team11-text18 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text19 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text20 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons05">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-thq="slider-pagination"
+                class="team11-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+              >
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                ></div>
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="swiper-pagination-bullet"
+                ></div>
+              </div>
+              <div
+                data-thq="slider-button-prev"
+                class="swiper-button-prev"
+              ></div>
+              <div
+                data-thq="slider-button-next"
+                class="swiper-button-next"
+              ></div>
+            </div>
+            <div
+              data-thq="slider"
+              data-navigation="true"
+              data-pagination="true"
+              class="team11-slider1 swiper"
+            >
+              <div data-thq="slider-wrapper" class="swiper-wrapper">
+                <div
+                  data-thq="slider-slide"
+                  class="team11-slider-slide2 swiper-slide"
+                >
+                  <div class="team11-card06">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image06 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content07">
+                      <div class="team11-title06">
+                        <span class="team11-text21 thq-body-small">
+                          <span>Full name</span>
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text23 thq-body-small">
+                          <span>Job title</span>
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text25 thq-body-small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                      </span>
+                    </div>
+                    <div class="team11-social-icons06">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-thq="slider-slide"
+                  class="team11-slider-slide3 swiper-slide"
+                >
+                  <div class="team11-card07">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image07 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content08">
+                      <div class="team11-title07">
+                        <span class="team11-text26 thq-body-small">
+                          Full name
+                        </span>
+                        <span class="team11-text27 thq-body-small">
+                          Job title
+                        </span>
+                      </div>
+                      <span class="team11-text28 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons07">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-thq="slider-slide"
+                  class="team11-slider-slide4 swiper-slide"
+                >
+                  <div class="team11-card08">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image08 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content09">
+                      <div class="team11-title08">
+                        <span class="team11-text29 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text30 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text31 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons08">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-thq="slider-slide"
+                  class="team11-slider-slide5 swiper-slide"
+                >
+                  <div class="team11-card09">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDV8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image09 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content10">
+                      <div class="team11-title09">
+                        <span class="team11-text32 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text33 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text34 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons09">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-thq="slider-slide"
+                  class="team11-slider-slide6 swiper-slide"
+                >
+                  <div class="team11-card10">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image10 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content11">
+                      <div class="team11-title10">
+                        <span class="team11-text35 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text36 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text37 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons10">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-thq="slider-slide"
+                  class="team11-slider-slide7 swiper-slide"
+                >
+                  <div class="team11-card11">
+                    <img
+                      alt="Member Alt"
+                      src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE2fHx1c2VyfGVufDB8fHx8MTcxMDk0MjYxMnww&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="team11-placeholder-image11 thq-img-ratio-4-3"
+                    />
+                    <div class="team11-content12">
+                      <div class="team11-title11">
+                        <span class="team11-text38 thq-body-small">
+                          <span>Full name</span>
+                        </span>
+                        <span class="team11-text39 thq-body-small">
+                          <span>Job title</span>
+                        </span>
+                      </div>
+                      <span class="team11-text40 thq-body-small">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique.
+                        </span>
+                      </span>
+                    </div>
+                    <div class="team11-social-icons11">
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-thq="slider-pagination"
+                class="team11-slider-pagination1 swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+              >
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                ></div>
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="swiper-pagination-bullet"
+                ></div>
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="swiper-pagination-bullet"
+                ></div>
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="swiper-pagination-bullet"
+                ></div>
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="swiper-pagination-bullet"
+                ></div>
+                <div
+                  data-thq="slider-pagination-bullet"
+                  class="swiper-pagination-bullet"
+                ></div>
+              </div>
+              <div
+                data-thq="slider-button-prev"
+                class="swiper-button-prev"
+              ></div>
+              <div
+                data-thq="slider-button-next"
+                class="swiper-button-next"
+              ></div>
+            </div>
+            <div class="team11-content13">
+              <div class="team11-content14">
+                <h2 class="team11-text41 thq-heading-2">
+                  <span>We’re hiring!</span>
+                </h2>
+                <span class="thq-body-small team11-text42">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </span>
+                </span>
+              </div>
+              <button class="team11-button thq-button-filled">
+                <span class="thq-body-small"><span>Open positions</span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

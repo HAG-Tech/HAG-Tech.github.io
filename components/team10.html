@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Swift Rectangular Snail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./team10.css" rel="stylesheet" />
+      <div class="thq-section-padding">
+        <div id="team" class="team10-max-width thq-section-max-width">
+          <div class="team10-section-title">
+            <span class="thq-body-small team10-text">
+              <span>Join our team and make a difference in your career!</span>
+            </span>
+            <div class="team10-content">
+              <h2 class="thq-heading-2"><span>Meet our team</span></h2>
+            </div>
+          </div>
+          <div
+            data-thq="slider"
+            data-loop="true"
+            data-autoplay="true"
+            data-navigation="true"
+            data-pagination="true"
+            class="team10-slider swiper"
+          >
+            <div data-thq="slider-wrapper" class="swiper-wrapper">
+              <div
+                data-thq="slider-slide"
+                class="team10-slider-slide swiper-slide"
+              >
+                <div class="team10-card">
+                  <img
+                    alt="Member Alt"
+                    src="public/98f8e26b-df7e-4160-8f0f-d21957c44c36_1_201_a-1400w.jpeg"
+                    class="team10-placeholder-image thq-img-ratio-1-1"
+                  />
+                  <div class="team10-content01">
+                    <div class="team10-title">
+                      <span class="team10-text02 thq-body-small">
+                        <span>Harsh Goutam</span>
+                      </span>
+                      <span class="team10-text03 thq-body-small">
+                        <span>Founder | CEO</span>
+                      </span>
+                    </div>
+                    <span class="team10-text04 thq-body-small">
+                      <span>
+                        The company starts with people and we have figured that
+                        long time ago. We’ve grown HAG Tech into a successful
+                        company with personal approach, to both clients and
+                        employees.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="team10-social-icons">
+                    <a
+                      href="https://www.linkedin.com/in/harsh-goutam-39997521a"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="team10-link"
+                    >
+                      <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="team10-icon thq-icon-small"
+                      >
+                        <path
+                          d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://x.com/HarshGout"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="team10-link1"
+                    >
+                      <svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="team10-icon02 thq-icon-small"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-thq="slider-slide"
+                class="team10-slider-slide1 swiper-slide"
+              >
+                <div class="team10-card1">
+                  <img
+                    alt="Member Alt"
+                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="team10-placeholder-image1 thq-img-ratio-1-1"
+                  />
+                  <div class="team10-content02">
+                    <div class="team10-title1">
+                      <span class="team10-text05 thq-body-small">
+                        <span>Full name</span>
+                      </span>
+                      <span class="team10-text06 thq-body-small">
+                        <span>Job title</span>
+                      </span>
+                    </div>
+                    <span class="team10-text07 thq-body-small">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="team10-social-icons1">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                      ></path></svg
+                    ><svg
+                      viewBox="0 0 950.8571428571428 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team10-card2">
+                  <img
+                    alt="Member Alt"
+                    src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDV8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="team10-placeholder-image2 thq-img-ratio-1-1"
+                  />
+                  <div class="team10-content03">
+                    <div class="team10-title2">
+                      <span class="team10-text08 thq-body-small">
+                        <span>Full name</span>
+                      </span>
+                      <span class="team10-text09 thq-body-small">
+                        <span>Job title</span>
+                      </span>
+                    </div>
+                    <span class="team10-text10 thq-body-small">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="team10-social-icons2">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                      ></path></svg
+                    ><svg
+                      viewBox="0 0 950.8571428571428 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-thq="slider-slide"
+                class="team10-slider-slide2 swiper-slide"
+              >
+                <div class="team10-card3">
+                  <img
+                    alt="Member Alt"
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="team10-placeholder-image3 thq-img-ratio-1-1"
+                  />
+                  <div class="team10-content04">
+                    <div class="team10-title3">
+                      <span class="team10-text11 thq-body-small">
+                        <span>Full name</span>
+                      </span>
+                      <span class="team10-text12 thq-body-small">
+                        <span>Job title</span>
+                      </span>
+                    </div>
+                    <span class="team10-text13 thq-body-small">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="team10-social-icons3">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                      ></path></svg
+                    ><svg
+                      viewBox="0 0 950.8571428571428 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team10-card4">
+                  <img
+                    alt="Member Alt"
+                    src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE2fHx1c2VyfGVufDB8fHx8MTcxMDk0MjYxMnww&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="team10-placeholder-image4 thq-img-ratio-1-1"
+                  />
+                  <div class="team10-content05">
+                    <div class="team10-title4">
+                      <span class="team10-text14 thq-body-small">
+                        <span>Full name</span>
+                      </span>
+                      <span class="team10-text15 thq-body-small">
+                        <span>Job title</span>
+                      </span>
+                    </div>
+                    <span class="team10-text16 thq-body-small">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="team10-social-icons4">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                      ></path></svg
+                    ><svg
+                      viewBox="0 0 950.8571428571428 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-thq="slider-pagination"
+              class="team10-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+            >
+              <div
+                data-thq="slider-pagination-bullet"
+                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+              ></div>
+              <div
+                data-thq="slider-pagination-bullet"
+                class="team10-slider-pagination-bullet1 swiper-pagination-bullet"
+              ></div>
+              <div
+                data-thq="slider-pagination-bullet"
+                class="team10-slider-pagination-bullet2 swiper-pagination-bullet"
+              ></div>
+            </div>
+            <div data-thq="slider-button-prev" class="swiper-button-prev"></div>
+            <div data-thq="slider-button-next" class="swiper-button-next"></div>
+          </div>
+          <div
+            data-thq="slider"
+            data-navigation="true"
+            data-pagination="true"
+            class="team10-slider1 swiper"
+          >
+            <div data-thq="slider-wrapper" class="swiper-wrapper">
+              <div
+                data-thq="slider-slide"
+                class="team10-slider-slide3 swiper-slide"
+              >
+                <div class="team10-card5">
+                  <img
+                    alt="Member Alt"
+                    src="public/98f8e26b-df7e-4160-8f0f-d21957c44c36_1_201_a-1400w.jpeg"
+                    class="team10-placeholder-image5 thq-img-ratio-1-1"
+                  />
+                  <div class="team10-content06">
+                    <div class="team10-title5">
+                      <span class="team10-text17 thq-body-small">
+                        <span>Harsh Goutam</span>
+                      </span>
+                      <span class="team10-text18 thq-body-small">
+                        <span>Founder | CEO</span>
+                      </span>
+                    </div>
+                    <span class="team10-text19 thq-body-small">
+                      <span>
+                        The company starts with people and we have figured that
+                        long time ago. We’ve grown HAG Tech into a successful
+                        company with personal approach, to both clients and
+                        employees.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="team10-social-icons5">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                      ></path></svg
+                    ><svg
+                      viewBox="0 0 950.8571428571428 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div data-thq="slider-slide" class="team10-slider-slide4">
+                <div class="team10-card6">
+                  <img
+                    alt="Member Alt"
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHVzZXJ8ZW58MHx8fHwxNzEwOTQyNjEyfDA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="thq-img-ratio-1-1 team10-placeholder-image6"
+                  />
+                  <div class="team10-content07">
+                    <div class="team10-title6">
+                      <span class="team10-text20 thq-body-small">
+                        <span>Full name</span>
+                        <span>Harsh Goutam</span>
+                      </span>
+                      <span class="team10-text22 thq-body-small">
+                        <span>Job title</span>
+                        <span>Founder | CEO</span>
+                      </span>
+                    </div>
+                    <span class="team10-text24 thq-body-small">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique.
+                    </span>
+                  </div>
+                  <div class="team10-social-icons6">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                      ></path></svg
+                    ><svg
+                      viewBox="0 0 950.8571428571428 1024"
+                      class="thq-icon-small"
+                    >
+                      <path
+                        d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-thq="slider-pagination"
+              class="team10-slider-pagination1 swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+            >
+              <div
+                data-thq="slider-pagination-bullet"
+                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+              ></div>
+            </div>
+            <div data-thq="slider-button-prev" class="swiper-button-prev"></div>
+            <div data-thq="slider-button-next" class="swiper-button-next"></div>
+          </div>
+          <div class="team10-content08">
+            <div class="team10-content09">
+              <h2 id="hiring" class="team10-text25 thq-heading-2">
+                <span>We’re hiring!</span>
+              </h2>
+              <span class="thq-body-small team10-text26">
+                <span>
+                  The company starts with people and we have figured that long
+                  time ago. We’ve grown HAG Tech into a successful company with
+                  personal approach, to both clients and employees.
+                </span>
+              </span>
+            </div>
+            <button class="team10-button thq-button-filled">
+              <span class="thq-body-small"><span>Open positions</span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

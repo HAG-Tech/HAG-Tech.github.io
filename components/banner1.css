@@ -1,0 +1,30 @@
+.banner1-container {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.banner1-max-width {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner1-container1 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner1-title {
+  text-align: center;
+}
+.banner1-text {
+  text-align: center;
+}
+.banner1-link {
+  text-decoration: none;
+}
+.banner1-root-class-name {
+  display: none;
+}
